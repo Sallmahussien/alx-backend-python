@@ -3,10 +3,9 @@
 
 import asyncio
 import random
-from typing import Union
 
 
-async def wait_random(max_delay: Union[int, float] = 10) -> float:
+async def wait_random(max_delay: int = 10) -> float:
     """Waits for a random delay and returns it"""
     random_delay = random.uniform(0, max_delay)
 
