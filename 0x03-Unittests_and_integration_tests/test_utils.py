@@ -43,3 +43,7 @@ class TestGetJson(unittest.TestCase):
 
         self.assertEqual(get_json(test_url), test_payload)
         get_mock.assert_called_once_with(test_url)
+
+
+if __name__ == '__main__':
+    unittest.main()
